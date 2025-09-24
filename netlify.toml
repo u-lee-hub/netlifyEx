@@ -1,0 +1,16 @@
+# 정적 사이트: 별도 빌드 없음
+[build]
+publish = "."
+
+# Netlify Forms(봇 필터 등) 강화 예시
+[[headers]]
+for = "/*"
+[headers.values]
+X-Frame-Options = "SAMEORIGIN"
+X-Content-Type-Options = "nosniff"
+
+# SPA 라우팅이 필요하면 아래 주석 해제
+# [[redirects]]
+# from = "/*"
+# to = "/index.html"
+# status = 200
