@@ -1,3 +1,4 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a112ed01-8ab0-476c-a3c5-12e6a2612d7f/deploy-status)](https://app.netlify.com/projects/netlifytomato/deploys)
 # Netlify Portfolio Starter
 
 간단한 정적 포트폴리오 템플릿입니다. GitHub에 푸시하고 Netlify에 연결하여 무료로 배포할 수 있습니다.
