@@ -4,14 +4,14 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Developer Portfolio · UZERO</title>
-  <meta name="description" content="백엔드/데이터 개발자 포트폴리오">
+  <meta name="description" content="백엔드/DevOps 개발자 포트폴리오">
   <meta property="og:title" content="UZERO · Developer Portfolio">
-  <meta property="og:description" content="Java Spring, Node.js, Python 기반 백엔드 개발자">
+  <meta property="og:description" content="Java Spring, Node.js, Kubernetes 기반 풀스택 개발자">
   <meta property="og:type" content="website">
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
 </head>
-<body class="body-sprinkles">
+<body>
   <header class="header">
     <div class="container">
       <a href="#" class="logo">UZ<span>ERO</span></a>
@@ -34,10 +34,10 @@
     <section class="hero">
       <div class="hero-content">
         <h1 class="hero-title">
-          <span class="subtitle">Fullstack Developer</span>
+          <span class="subtitle">Backend & DevOps Developer</span>
           <span class="main-title">안녕하세요,<br><em>UZERO</em>입니다</span>
         </h1>
-        <p class="hero-desc">Java Spring, Node.js, Python을 활용한 백엔드 개발과<br>데이터 파이프라인 구축에 관심이 많습니다</p>
+        <p class="hero-desc">Java Spring, Node.js, Kubernetes를 활용한 백엔드 개발과<br>클라우드 네이티브 인프라 구축에 관심이 많습니다</p>
         <div class="hero-actions">
           <a class="btn primary" href="#timeline">프로젝트 보기</a>
           <a class="btn secondary" href="mailto:dev@example.com">Contact</a>
@@ -45,12 +45,12 @@
       </div>
       <div class="hero-visual">
         <div class="code-block">
-          <div class="code-line"><span class="keyword">class</span> Developer {</div>
-          <div class="code-line">  <span class="keyword">constructor</span>() {</div>
-          <div class="code-line">    <span class="keyword">this</span>.name = <span class="string">'UZERO'</span>;</div>
-          <div class="code-line">    <span class="keyword">this</span>.skills = [<span class="string">'Java'</span>, <span class="string">'Spring'</span>, <span class="string">'Node.js'</span>];</div>
-          <div class="code-line">  }</div>
-          <div class="code-line">}</div>
+          <div class="code-line"><span class="keyword">apiVersion</span>: apps/v1</div>
+          <div class="code-line"><span class="keyword">kind</span>: Deployment</div>
+          <div class="code-line"><span class="keyword">metadata</span>:</div>
+          <div class="code-line">  <span class="keyword">name</span>: <span class="string">mbti-app</span></div>
+          <div class="code-line"><span class="keyword">spec</span>:</div>
+          <div class="code-line">  <span class="keyword">replicas</span>: <span class="number">3</span></div>
         </div>
       </div>
     </section>
@@ -59,24 +59,24 @@
       <div class="container">
         <h2 class="section-title">About Me</h2>
         <div class="about-content">
-          <p>현재 <strong>스마트금융</strong>을 전공하며 백엔드 개발자를 준비하고 있습니다. Java Spring Framework와 Node.js를 활용한 웹 애플리케이션 개발, Docker/Kafka를 이용한 마이크로서비스 아키텍처, 그리고 Python 기반 데이터 처리에 관심이 많습니다.</p>
-          <p>문제를 작게 쪼개어 해결하고, 코드를 통해 배운 것을 문서화하며, 꾸준히 성장하는 개발자가 되고자 합니다.</p>
+          <p>현재 <strong>스마트금융</strong>을 전공하며 백엔드 개발자를 준비하고 있습니다. Java Spring Framework와 Node.js를 활용한 웹 애플리케이션 개발, Docker/Kubernetes를 이용한 컨테이너 오케스트레이션, 그리고 Python 기반 데이터 처리에 관심이 많습니다.</p>
+          <p>문제를 작게 쪼개어 해결하고, 코드를 통해 배운 것을 문서화하며, 클라우드 네이티브 환경에서 확장 가능한 시스템을 구축하는 개발자가 되고자 합니다.</p>
         </div>
         <ul class="about-highlights">
           <li>
             <span class="icon">🎯</span>
             <strong>관심 분야</strong>
-            <span>Backend, Data Pipeline, DevOps</span>
+            <span>Backend, DevOps, Container Orchestration</span>
           </li>
           <li>
             <span class="icon">💡</span>
             <strong>강점</strong>
-            <span>문제 분해 능력, 학습 지속성</span>
+            <span>문제 분해 능력, 시스템 설계</span>
           </li>
           <li>
             <span class="icon">📚</span>
             <strong>학습 중</strong>
-            <span>Spring Boot, Kafka, Docker, AI/ML</span>
+            <span>Kubernetes, Spring Cloud, Microservices</span>
           </li>
         </ul>
       </div>
@@ -87,19 +87,19 @@
         <h2 class="section-title">Development Journey</h2>
         <div class="stats-grid">
           <div class="stat-item">
-            <div class="stat-number">15+</div>
+            <div class="stat-number">18+</div>
             <div class="stat-label">완성한 프로젝트</div>
           </div>
           <div class="stat-item">
-            <div class="stat-number">1,200+</div>
+            <div class="stat-number">1,500+</div>
             <div class="stat-label">커밋 수</div>
           </div>
           <div class="stat-item">
-            <div class="stat-number">500+</div>
+            <div class="stat-number">650+</div>
             <div class="stat-label">학습 시간</div>
           </div>
           <div class="stat-item">
-            <div class="stat-number">8</div>
+            <div class="stat-number">12</div>
             <div class="stat-label">기술 스택</div>
           </div>
         </div>
@@ -110,6 +110,23 @@
       <div class="container">
         <h2 class="section-title">Project Timeline</h2>
         <div class="timeline-list">
+          <article class="timeline-item" data-year="2025.12">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <time>2025.12</time>
+              <h3>MBTI Web App - Kubernetes 배포 프로젝트</h3>
+              <p>Docker 컨테이너화 및 Kubernetes 클러스터 배포 프로젝트. Node.js 백엔드와 MySQL DB를 Pod, Deployment, Service로 구성하고, Ingress Controller와 LoadBalancer로 외부 트래픽 라우팅. HPA를 통한 자동 스케일링 및 PV/PVC로 데이터 영속화 구현.</p>
+              <div class="timeline-tags">
+                <span>Kubernetes</span>
+                <span>Docker</span>
+                <span>Node.js</span>
+                <span>MySQL</span>
+                <span>NGINX Ingress</span>
+                <span>HPA</span>
+              </div>
+            </div>
+          </article>
+
           <article class="timeline-item" data-year="2025.09">
             <div class="timeline-marker"></div>
             <div class="timeline-content">
@@ -119,6 +136,7 @@
               <div class="timeline-tags">
                 <span>Java</span>
                 <span>Spring</span>
+                <span>eGov Framework</span>
                 <span>MySQL</span>
                 <span>JSP</span>
               </div>
@@ -135,6 +153,7 @@
                 <span>Node.js</span>
                 <span>Express</span>
                 <span>Socket.io</span>
+                <span>WebSocket</span>
                 <span>EJS</span>
               </div>
             </div>
@@ -144,11 +163,11 @@
             <div class="timeline-marker"></div>
             <div class="timeline-content">
               <time>2025.08</time>
-              <h3>Kafka 메시지 대시보드</h3>
+              <h3>Kafka 메시지 대시보드 & 마이크로서비스</h3>
               <p>Docker Compose로 로컬 Kafka 클러스터 구성, Producer/Consumer 구현 및 토픽 모니터링 웹 UI 개발. Nginx 로드밸런싱 적용.</p>
               <div class="timeline-tags">
                 <span>Kafka</span>
-                <span>Docker</span>
+                <span>Docker Compose</span>
                 <span>Nginx</span>
                 <span>Microservices</span>
               </div>
@@ -166,6 +185,7 @@
                 <span>LLM</span>
                 <span>API Integration</span>
                 <span>Dify</span>
+                <span>Ollama</span>
               </div>
             </div>
           </article>
@@ -180,6 +200,7 @@
                 <span>Python</span>
                 <span>Deep Learning</span>
                 <span>Data Processing</span>
+                <span>Scikit-learn</span>
               </div>
             </div>
           </article>
@@ -202,12 +223,21 @@
             </div>
           </div>
           <div class="skill-category">
-            <h3>Database & Infrastructure</h3>
+            <h3>DevOps & Infrastructure</h3>
             <div class="skill-tags">
-              <span>MySQL</span>
+              <span>Kubernetes</span>
               <span>Docker</span>
               <span>Kafka</span>
               <span>Nginx</span>
+              <span>MetalLB</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Database & Storage</h3>
+            <div class="skill-tags">
+              <span>MySQL</span>
+              <span>PersistentVolume</span>
+              <span>Data Pipeline</span>
             </div>
           </div>
           <div class="skill-category">
@@ -223,7 +253,8 @@
           <div class="skill-category">
             <h3>Learning</h3>
             <div class="skill-tags">
-              <span>Microservices</span>
+              <span>Spring Cloud</span>
+              <span>Istio Service Mesh</span>
               <span>AI/ML</span>
               <span>System Design</span>
             </div>
@@ -255,8 +286,9 @@
           <div class="contact-info">
             <h3>Connect</h3>
             <ul class="social-links">
-              <li><a href="https://github.com/u-lee-hub" target="_blank" rel="noopener">GitHub</a></li>
+              <li><a href="https://github.com/your-id" target="_blank" rel="noopener">GitHub</a></li>
               <li><a href="mailto:dev@example.com">Email</a></li>
+              <li><a href="https://www.linkedin.com/in/your-id" target="_blank" rel="noopener">LinkedIn</a></li>
             </ul>
           </div>
         </div>
