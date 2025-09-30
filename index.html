@@ -3,126 +3,273 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>포트폴리오 · Your Name</title>
-  <meta name="description" content="간단한 자기소개와 프로젝트를 담은 포트폴리오">
-  <meta property="og:title" content="Your Name · 포트폴리오">
-  <meta property="og:description" content="간단한 자기소개와 프로젝트를 담은 포트폴리오">
+  <title>Developer Portfolio · UZERO</title>
+  <meta name="description" content="백엔드/데이터 개발자 포트폴리오">
+  <meta property="og:title" content="UZERO · Developer Portfolio">
+  <meta property="og:description" content="Java Spring, Node.js, Python 기반 백엔드 개발자">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/og.png">
   <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
 </head>
-<body>
-  <header class="container">
-    <a href="#" class="brand">Your<span>Name</span></a>
-    <nav id="nav">
-      <a href="#about">소개</a>
-      <a href="#skills">기술</a>
-      <a href="#projects">프로젝트</a>
-      <a href="#contact">연락처</a>
-      <button id="themeToggle" aria-label="테마 전환">🌓</button>
-    </nav>
-    <button class="hamburger" id="hamburger" aria-label="메뉴">
-      <span></span><span></span><span></span>
-    </button>
+<body class="body-sprinkles">
+  <header class="header">
+    <div class="container">
+      <a href="#" class="logo">UZ<span>ERO</span></a>
+      <nav class="nav" id="nav">
+        <a href="#about">About</a>
+        <a href="#stats">Stats</a>
+        <a href="#timeline">Timeline</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="메뉴">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
   </header>
 
   <main>
-    <section class="hero container">
-      <div>
-        <h1>안녕하세요, <span class="accent">UZERO</span>입니다.</h1>
-        <p>백엔드/블록체인/데이터에 관심 있는 개발자 지망생입니다. 문제를 구조화하고, 작게 실험하며, 빠르게 학습합니다.</p>
-        <div class="actions">
-          <a class="btn primary" href="#projects">프로젝트 보기</a>
-          <a class="btn" href="assets/resume.pdf" target="_blank" rel="noopener">이력서(PDF)</a>
+    <section class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">
+          <span class="subtitle">Backend Developer</span>
+          <span class="main-title">안녕하세요,<br><em>UZERO</em>입니다</span>
+        </h1>
+        <p class="hero-desc">Java Spring, Node.js, Python을 활용한 백엔드 개발과<br>데이터 파이프라인 구축에 관심이 많습니다</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#timeline">프로젝트 보기</a>
+          <a class="btn secondary" href="mailto:dev@example.com">Contact</a>
         </div>
-        <ul class="social">
-          <li><a href="https://github.com/your-id" target="_blank" rel="noopener">GitHub</a></li>
-          <li><a href="mailto:you@example.com">Email</a></li>
-          <li><a href="https://www.linkedin.com/in/your-id" target="_blank" rel="noopener">LinkedIn</a></li>
+      </div>
+      <div class="hero-visual">
+        <div class="code-block">
+          <div class="code-line"><span class="keyword">class</span> Developer {</div>
+          <div class="code-line">  <span class="keyword">constructor</span>() {</div>
+          <div class="code-line">    <span class="keyword">this</span>.name = <span class="string">'UZERO'</span>;</div>
+          <div class="code-line">    <span class="keyword">this</span>.skills = [<span class="string">'Java'</span>, <span class="string">'Spring'</span>, <span class="string">'Node.js'</span>];</div>
+          <div class="code-line">  }</div>
+          <div class="code-line">}</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <p>현재 <strong>스마트금융</strong>을 전공하며 백엔드 개발자를 준비하고 있습니다. Java Spring Framework와 Node.js를 활용한 웹 애플리케이션 개발, Docker/Kafka를 이용한 마이크로서비스 아키텍처, 그리고 Python 기반 데이터 처리에 관심이 많습니다.</p>
+          <p>문제를 작게 쪼개어 해결하고, 코드를 통해 배운 것을 문서화하며, 꾸준히 성장하는 개발자가 되고자 합니다.</p>
+        </div>
+        <ul class="about-highlights">
+          <li>
+            <span class="icon">🎯</span>
+            <strong>관심 분야</strong>
+            <span>Backend, Data Pipeline, DevOps</span>
+          </li>
+          <li>
+            <span class="icon">💡</span>
+            <strong>강점</strong>
+            <span>문제 분해 능력, 학습 지속성</span>
+          </li>
+          <li>
+            <span class="icon">📚</span>
+            <strong>학습 중</strong>
+            <span>Spring Boot, Kafka, Docker, AI/ML</span>
+          </li>
         </ul>
       </div>
-      <figure class="hero-illus" aria-label="프로필 일러스트">
-        <img src="assets/profile.svg" alt="profile illustration" />
-      </figure>
     </section>
 
-    <section id="about" class="container section">
-      <h2>소개</h2>
-      <p>현재 <strong>스마트금융</strong>을 전공하며, 자바/파이썬 기초와 웹 배포 자동화에 관심이 많습니다. 
-      수업과 개인 프로젝트로 <em>버전 관리, 협업, 클라우드 배포</em>를 실습했습니다.</p>
-      <ul class="fact-grid">
-        <li><span>🌏</span> 관심 분야: 웹, 데이터, 블록체인</li>
-        <li><span>🧩</span> 강점: 문제분해, 꾸준함</li>
-        <li><span>📚</span> 학습: Clean Code, CS 기초</li>
-      </ul>
-    </section>
-
-    <section id="skills" class="container section">
-      <h2>기술</h2>
-      <div class="chips">
-        <span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span>
-        <span class="chip">Python</span><span class="chip">Java</span><span class="chip">Git/GitHub</span>
-        <span class="chip">Netlify</span>
+    <section id="stats" class="section stats">
+      <div class="container">
+        <h2 class="section-title">Development Journey</h2>
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-number">15+</div>
+            <div class="stat-label">완성한 프로젝트</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">1,200+</div>
+            <div class="stat-label">커밋 수</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">500+</div>
+            <div class="stat-label">학습 시간</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">8</div>
+            <div class="stat-label">기술 스택</div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="projects" class="container section">
-      <h2>프로젝트</h2>
-      <div class="cards">
-        <article class="card">
-          <header>
-            <h3>간단한 주가 리포트 뷰어</h3>
-            <time>2025</time>
-          </header>
-          <p>Firestore에 수집된 리포트를 표로 요약해 보여주는 웹 UI 프로토타입.</p>
-          <a class="btn small" href="#" target="_blank" rel="noopener">Demo</a>
-          <a class="btn small ghost" href="#" target="_blank" rel="noopener">Source</a>
-        </article>
-        <article class="card">
-          <header>
-            <h3>Kafka 메시지 대시보드</h3>
-            <time>2025</time>
-          </header>
-          <p>로컬 Kafka와 연동하여 토픽/컨슈머 상태를 시각화하는 미니 대시보드.</p>
-          <a class="btn small" href="#" target="_blank" rel="noopener">Demo</a>
-          <a class="btn small ghost" href="#" target="_blank" rel="noopener">Source</a>
-        </article>
-        <article class="card">
-          <header>
-            <h3>ERC-1155 토큰 실습</h3>
-            <time>2024</time>
-          </header>
-          <p>Remix/Ganache 기반 멀티토큰 발행, 메타데이터 조회 데모.</p>
-          <a class="btn small" href="#" target="_blank" rel="noopener">Demo</a>
-          <a class="btn small ghost" href="#" target="_blank" rel="noopener">Source</a>
-        </article>
+    <section id="timeline" class="section timeline">
+      <div class="container">
+        <h2 class="section-title">Project Timeline</h2>
+        <div class="timeline-list">
+          <article class="timeline-item" data-year="2025.09">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <time>2025.09</time>
+              <h3>전자결재 시스템 (eGov Framework)</h3>
+              <p>한국형 전자정부 프레임워크 기반 결재 시스템 구현. Spring MVC 패턴, MySQL 연동, JSP 뷰 렌더링, 사용자 인증/권한 관리 구현.</p>
+              <div class="timeline-tags">
+                <span>Java</span>
+                <span>Spring</span>
+                <span>MySQL</span>
+                <span>JSP</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item" data-year="2025.08">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <time>2025.08</time>
+              <h3>실시간 채팅 애플리케이션 (Node.js + Socket.io)</h3>
+              <p>Express 프레임워크와 Socket.io를 활용한 실시간 채팅 서비스. WebSocket 양방향 통신, 메시지 영속화, AJAX 기반 동적 UI 구현.</p>
+              <div class="timeline-tags">
+                <span>Node.js</span>
+                <span>Express</span>
+                <span>Socket.io</span>
+                <span>EJS</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item" data-year="2025.08">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <time>2025.08</time>
+              <h3>Kafka 메시지 대시보드</h3>
+              <p>Docker Compose로 로컬 Kafka 클러스터 구성, Producer/Consumer 구현 및 토픽 모니터링 웹 UI 개발. Nginx 로드밸런싱 적용.</p>
+              <div class="timeline-tags">
+                <span>Kafka</span>
+                <span>Docker</span>
+                <span>Nginx</span>
+                <span>Microservices</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item" data-year="2025.07">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <time>2025.07</time>
+              <h3>MCP + LLM 문화정보 챗봇</h3>
+              <p>Model Context Protocol을 이용해 로컬 LLM(Ollama)과 외부 API 연동. Dify 플랫폼으로 문화행사 Q&A 챗봇 프로토타입 구축.</p>
+              <div class="timeline-tags">
+                <span>Python</span>
+                <span>LLM</span>
+                <span>API Integration</span>
+                <span>Dify</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item" data-year="2025.07">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <time>2025.07</time>
+              <h3>딥러닝 데이터 전처리 실습</h3>
+              <p>신경망 학습을 위한 데이터 정규화(MinMaxScaler), 배치 사이즈 최적화, Adam/SGD 옵티마이저 비교 실험.</p>
+              <div class="timeline-tags">
+                <span>Python</span>
+                <span>Deep Learning</span>
+                <span>Data Processing</span>
+              </div>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section id="contact" class="container section">
-      <h2>연락처</h2>
-      <form name="contact" method="POST" data-netlify="true" class="contact-form">
-        <input type="hidden" name="form-name" value="contact">
-        <label>이름
-          <input required name="name" placeholder="홍길동" />
-        </label>
-        <label>이메일
-          <input required type="email" name="email" placeholder="you@example.com" />
-        </label>
-        <label>메시지
-          <textarea required name="message" rows="5" placeholder="안녕하세요..."></textarea>
-        </label>
-        <button class="btn primary" type="submit">보내기</button>
-        <p class="form-hint">Netlify Forms로 전송됩니다.</p>
-      </form>
+    <section id="skills" class="section skills">
+      <div class="container">
+        <h2 class="section-title">Tech Stack</h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Backend</h3>
+            <div class="skill-tags">
+              <span>Java</span>
+              <span>Spring Framework</span>
+              <span>Node.js</span>
+              <span>Express</span>
+              <span>Python</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Database & Infrastructure</h3>
+            <div class="skill-tags">
+              <span>MySQL</span>
+              <span>Docker</span>
+              <span>Kafka</span>
+              <span>Nginx</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Frontend & Tools</h3>
+            <div class="skill-tags">
+              <span>HTML/CSS</span>
+              <span>JavaScript</span>
+              <span>React</span>
+              <span>Git/GitHub</span>
+              <span>Netlify</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Learning</h3>
+            <div class="skill-tags">
+              <span>Microservices</span>
+              <span>AI/ML</span>
+              <span>System Design</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content">
+          <form name="contact" method="POST" data-netlify="true" class="contact-form">
+            <input type="hidden" name="form-name" value="contact">
+            <div class="form-group">
+              <label for="name">이름</label>
+              <input required id="name" name="name" type="text" placeholder="홍길동" />
+            </div>
+            <div class="form-group">
+              <label for="email">이메일</label>
+              <input required id="email" name="email" type="email" placeholder="you@example.com" />
+            </div>
+            <div class="form-group">
+              <label for="message">메시지</label>
+              <textarea required id="message" name="message" rows="6" placeholder="문의 내용을 입력해주세요"></textarea>
+            </div>
+            <button class="btn primary" type="submit">전송하기</button>
+          </form>
+          <div class="contact-info">
+            <h3>Connect</h3>
+            <ul class="social-links">
+              <li><a href="https://github.com/u-lee-hub" target="_blank" rel="noopener">GitHub</a></li>
+              <li><a href="mailto:dev@example.com">Email</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer class="container">
-    <p>© <span id="year"></span> Your Name — 배포: Netlify</p>
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> UZERO. Deployed on Netlify.</p>
+    </div>
   </footer>
 
-  <script src="script.js" defer></script>
+  <script src="script.js"></script>
 </body>
 </html>
